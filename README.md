@@ -1,5 +1,9 @@
 # Dynamic-Import-Server
-This is a Node.js server that demonstrates dynamic imports and top-level await using ES modules. It serves HTML and JSON dynamically based on the route. 1️⃣ Prerequisites Node.js v14+ (ES modules & top-level await support) "type": "module" in package.json { "type": "module", "scripts": { "start": "node server.mjs", "dev": "nodemon server.mjs" } } 2️⃣ Project Structure graphql project/ │ ├─ server.mjs # Main server file ├─ index7.html # HTML page served dynamically ├─ modules/ │ └─ about7.js # Custom module for /about route └─ package.json 3️⃣ server.mjs Explained import http from 'http'; Import the built-in HTTP module to create a server.
+This is a Node.js server that demonstrates dynamic imports and top-level await using ES modules. It serves HTML and JSON dynamically based on the route. 
+1️⃣ Prerequisites Node.js v14+ (ES modules & top-level await support) "type": "module" in package.json { "type": "module", "scripts": { "start": "node server.mjs", "dev": "nodemon server.mjs" } } 
+2️⃣ Project Structure graphql project/ │ ├─ server.mjs # Main server file ├─ index7.html # HTML page served dynamically ├─ modules/ │ └─ about7.js # Custom module for /about route └─ package.json
+
+3️⃣ server.mjs Explained import http from 'http'; Import the built-in HTTP module to create a server.
 
 const server = http.createServer(async (req, res) => { Create a server using http.createServer.
 
